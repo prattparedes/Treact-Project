@@ -15,6 +15,25 @@ body{
     padding: 32px;
 }
 
+#landing{
+    height: 100vh;
+}
+
+.row{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.container{
+    display: flex;
+    padding: 96px 0;
+}
+
+.text--blue{
+    color: #2a2fb7;
+}
+
 /* Barra Navegación */
 
 nav{
@@ -28,6 +47,12 @@ nav{
     align-items: center;
     font-size: 24px;
     font-weight: bold;
+    color: #243E63;
+    transition: all 300ms ease;
+}
+
+.nav__logo:hover {
+    color: #2a2fb7;
 }
 
 .nav__logo--wrapper{
@@ -46,6 +71,7 @@ nav{
     font-size: 14px;
     margin: 0px 24px;
     font-weight: 600;
+    color: #243E63;
 }
 
 .nav__link:nth-child(5) {
@@ -53,6 +79,93 @@ nav{
 }
 
 .nav__link--primary{
-    background-color: #;
-    border: ;
+    margin: 0;
+    background-color: #2a2fb7;
+    color: white;
+    padding: 12px 32px;
+    border-radius: 24px;
 }
+
+/* Descripción landing page */
+
+.header__description{
+    width: 40%;
+}
+
+.header__description--title{
+    font-size: 48px;
+}
+
+.header__description--para{
+    font-size: 18px;
+    margin: 32px 0;
+}
+
+.header__description--input{
+    width: 100%;
+    padding: 20px 192px 20px 32px;
+    border-radius: 9999px;
+    border: 1px solid lightgray;
+    transition: border-color 300ms ease;
+}
+
+.header__description--input:hover{
+    border-color: black;
+}
+
+.header__input--wrapper{
+    position: relative;
+}
+
+.header__description--btn{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    margin: 8px 8px 8px 0;
+    padding: 16px 32px;
+    border-radius: 9999px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #2a2fb7;
+    color: white;
+    font-weight: bold;
+    border: #2a2fb7;
+    transition: background-color 300ms ease;
+}
+
+.header__description--btn:hover{
+    background-color: #585baf;
+}
+
+.header__description--figure{
+    width: 60%;
+    display: flex;
+}
+
+.header__description--img{
+    width: 100%;
+    height: 70vh;
+}
+
+.header__description--logos{
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+}
+
+.header__description--logo-p{
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: #A0AEc0;
+}
+
+.header__description--logo{
+    padding-right: 128px;
+    margin-top: 16px;
+    opacity: 0.5;
+}
+
