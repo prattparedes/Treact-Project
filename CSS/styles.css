@@ -19,11 +19,6 @@ body{
     padding: 32px;
 }
 
-#landing,
-#features{
-    height: 100vh;
-}
-
 .row{
     width: 100%;
     max-width: 1200px;
@@ -95,6 +90,9 @@ nav{
 
 .header__description{
     width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .header__description--title{
@@ -104,6 +102,8 @@ nav{
 .header__description--para{
     font-size: 18px;
     margin: 32px 0;
+    color: #243E63;
+    line-height: 1.5;
 }
 
 .header__description--input{
@@ -120,6 +120,7 @@ nav{
 
 .header__input--wrapper{
     position: relative;
+    margin-right: 48px;
 }
 
 .header__description--btn{
@@ -148,12 +149,17 @@ nav{
 
 .header__description--figure{
     width: 60%;
+    max-height: 520px;
     display: flex;
+    align-items: center;
+    justify-content: center;    
 }
 
 .header__description--img{
     width: 100%;
-    height: 70vh;
+    max-width: 100%;
+    max-height: 100%;
+    transform: translateX(50px);
 }
 
 .header__description--logos{
@@ -241,3 +247,85 @@ nav{
 }
 
 /* SECTION QUALITY-WORK */
+
+.quality-work__container{
+    display: flex;
+    align-items: center;
+}
+
+.section__description--quality{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    padding-right: 56px;
+}
+
+.quality-work__description--title{
+    margin-right: 24px;
+}
+
+.section__img--wrapper{
+    width: 50%;
+    height: 80%;
+    border: 1px solid  #c3d4ea;
+    border-radius: 4px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+}
+
+.section__img{
+    width: 100%;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.section__description--para{
+    text-align: left;
+    font-size: 18px;
+    color: #7c8ba1;
+    line-height: 1.5;
+    margin-top: 16px;
+    padding-right: 24px;
+}
+
+.btn{
+    margin: 0;
+    background-color: #2a2fb7;
+    color: white;
+    padding: 12px 32px;
+    border-radius: 24px;
+}
+
+.quality__btn{
+    margin-top: 32px;
+    max-width: 145px;
+    text-align: center;
+}
+
+.quality__btn:hover {
+    background-color: #585baf;
+}
+
+/* Section Steps */
+
+.section__description--steps{
+    width: 50%;
+}
+
+.steps__img--wrapper{
+    width: 50%;
+}
+
+.steps__img{
+    width: 100%;
+}
+
+.step{
+    display: flex;
+}
+
+.step__number{
+    color: #CBD5E0;
+    font-size: 36px;
+}
