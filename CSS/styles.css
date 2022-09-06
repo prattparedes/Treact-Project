@@ -309,8 +309,15 @@ nav{
 
 /* Section Steps */
 
+.steps__container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .section__description--steps{
     width: 50%;
+    padding: 32px 24px 32px 64px;
 }
 
 .steps__img--wrapper{
@@ -323,9 +330,73 @@ nav{
 
 .step{
     display: flex;
+    margin: 32px 0;
 }
 
 .step__number{
     color: #CBD5E0;
     font-size: 36px;
+}
+
+.step__description{
+    margin-left: 24px;
+}
+
+.step__description--h6{
+    font-size: 20px;
+    color: #243E63;
+}
+
+.step__description--para{
+    font-size: 14px;
+    margin-top: 12px;
+    line-height: 2;
+    max-width: 320px;
+    color: #718096;
+}
+
+/* Section values */
+
+.principles{
+    display: flex;
+    margin: 32px 32px 0 0;
+}
+
+.principle__title{
+    display: flex;
+    align-items: center;
+}
+
+.principle__img--wrapper{
+    background-color: rgba(154,230,180,0.5);
+    padding: 8px;
+    border-radius: 9999px;
+    width: 36px;
+    height: 36px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0.75;
+    font-size: 20px;
+}
+
+.principle__img--wrapper-2{
+    background-color: rgba(208, 121, 121, 0.5);
+}
+
+.principle__title--p{
+    font-size: 20px;
+    margin-left: 12px;
+    font-weight: 700;
+}
+
+.principle__description{
+    color: #718096;
+    font-size: 16px;
+    line-height: 1.5;
+    margin-top: 16px;
+}
+
+.values__img--wrapper{
+    border: none;
 }
