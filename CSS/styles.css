@@ -7,6 +7,10 @@
     box-sizing: border-box;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 h5{
     font-size: 16px;
 }
@@ -417,4 +421,167 @@ nav{
 
 .values__btn:hover {
     background-color: #585baf;
+}
+
+/* Section PRICING */
+
+.pricing__container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.plans{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.plan--container{
+    display: flex;
+    justify-content: center;
+    width: calc(100% / 3);
+}
+
+.plan{
+    width: 90%;
+    text-align: center;
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+    border:1px solid rgba(211, 211, 211, 0.5);
+    position: relative;
+}
+
+.plan--middle{
+    background: linear-gradient(135deg, rgb(76, 81, 191) 0%, rgb(102, 126, 234) 100%);
+    color: white;
+}
+
+.plan__title span,
+.plan__features span{
+    display: block;
+}
+
+.plan__title {
+    padding: 32px 0;
+}
+
+.plan__title--name{
+    font-size: 20px;
+    color: #1A202C;
+    font-weight: 700;
+}
+
+.plan__title--price{
+    font-size: 48px;
+    margin: 12px 0;
+    font-weight: 700;
+}
+
+.plan__title--period{
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: #A0AEC0;
+}
+
+.plan__features{
+    padding: 32px;
+    border-top: 1px solid rgba(211, 211, 211, 0.5);
+    border-bottom: 1px solid rgba(211, 211, 211, 0.5);
+}
+
+.plan--middle .plan__features{
+    border-top: 2px solid rgba(102,126,234);
+    border-bottom: 2px solid rgba(102,126,234);
+}
+
+.plan__features--description-primary{
+    color: #1A202C;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.plan__features--description{
+    font-size: 16px;
+    color: #718096;
+    margin-top: 20px;
+}
+
+.plan__btn--wrapper{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 32px;
+}
+
+.plan__btn{
+    padding: 16px 32px;
+    border-radius: 9999px;
+    border: 0px white solid;
+    width: 100%;
+    max-width: 192px;
+    letter-spacing: 1px;
+    font-weight: 700;
+    color: white;
+    transition: all 300ms ease;
+}
+
+.plan--middle .plan__title--name{
+    color: #F7FAF0;
+}
+
+.plan--middle .plan__title--period{
+    color: #EDF2F7;
+}
+
+.plan--middle .plan__features--description-primary{
+    color: white;
+}
+
+.plan--middle .plan__features--description{
+    color: white;
+}
+
+.plan--middle .plan__btn{
+    color: #2a2fb7;
+}
+
+.plan__btn--green{
+    background: linear-gradient(115deg, rgb(56, 178, 172) 0%, rgb(129, 230, 217) 100%);
+}
+
+.plan__btn--red{
+    background: linear-gradient(115deg, rgb(245, 101, 101) 0%, rgb(254, 178, 178) 100%); 
+}
+
+.plan__border-top--green{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    content: "";
+    background: linear-gradient(115deg, rgb(56, 178, 172) 0%, rgb(129, 230, 217) 100%);
+    height: 5px;
+    width: 100%;
+}
+
+.plan__border-top--red{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    content: "";
+    background: linear-gradient(115deg, rgb(245, 101, 101) 0%, rgb(254, 178, 178) 100%);
+    height: 5px;
+    width: 100%;
+}
+
+.plan__btn:hover{
+    transform: translateX(2px) translateY(-2px);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.155);
+    cursor: pointer;
 }
