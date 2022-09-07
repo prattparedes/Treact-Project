@@ -837,6 +837,24 @@ footer{
 }
 .link{
     margin-bottom: 8px;
+    padding-bottom: 4px;
+    position: relative;
+}
+
+.link::after{
+    content: "";
+    height: 2px;
+    background-color: white;
+    position: absolute;
+    bottom: -1px;
+    left: 0px;
+    right: 0px;
+    opacity: 0;
+    transition: opacity 300ms ease;
+}
+
+.link:hover::after{
+    opacity: 1;
 }
 
 
