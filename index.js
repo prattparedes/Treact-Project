@@ -1,10 +1,11 @@
 function openMenu() {
-    document.body.classList += " menu--open"  /* agregar un espacio antes de poner el nombre de una clase es good practice*/
+    document.body.classList += " menu--open"
+    document.body.classList.remove('menu--closed')  /* agregar un espacio antes de poner el nombre de una clase es good practice*/
 }
 
 function closeMenu() {
     document.body.classList.remove('menu--open')
-
+    document.body.classList += " menu--closed"
 }
 
 

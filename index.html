@@ -15,17 +15,31 @@
     <section id="landing">
         <div class="row">
             <nav>
-                <div class="nav__logo--wrapper">
-                    <a class="nav__logo" href="#"><img class="nav__logo--img"
-                            src="https://treact.owaiskhan.me/static/media/logo.2c489fc4.svg" alt="">&nbspTreact</a>
+                <div class="nav__container">
+                    <div class="nav__logo--wrapper">
+                        <a class="nav__logo" href="#"><img class="nav__logo--img"
+                                src="https://treact.owaiskhan.me/static/media/logo.2c489fc4.svg" alt="">&nbspTreact</a>
+                    </div>
+                    <div class="nav__links">
+                        <a href="" class="nav__link nav__link--hover">About</a>
+                        <a href="" class="nav__link nav__link--hover">Blog</a>
+                        <a href="" class="nav__link nav__link--hover">Pricing</a>
+                        <a href="" class="nav__link nav__link--hover">Contact Us</a>
+                        <a href="" class="nav__link nav__link--hover">Login</a>
+                        <a href="" class="nav__link nav__link--primary">Sign Up</a>
+                    </div>
+                    <div class="nav__btn btn__menu-open" onclick="openMenu()"><i class="fas fa-bars"></i></div>
                 </div>
-                <div class="nav__links">
-                    <a href="" class="nav__link nav__link--hover">About</a>
-                    <a href="" class="nav__link nav__link--hover">Blog</a>
-                    <a href="" class="nav__link nav__link--hover">Pricing</a>
-                    <a href="" class="nav__link nav__link--hover">Contact Us</a>
-                    <a href="" class="nav__link nav__link--hover">Login</a>
-                    <a href="" class="nav__link nav__link--primary">Sign Up</a>
+                <div class="menu__backdrop">
+                    <button class="btn__menu-close" onclick="closeMenu()"><i class="fas fa-times"></i></button>
+                    <div class="menu__backdrop--list">
+                        <a href="#" class="menu__link menu__list">About</a>
+                        <a href="#" class="menu__link menu__list">Blog</a>
+                        <a href="#" class="menu__link menu__list">Pricing</a>
+                        <a href="#" class="menu__link menu__list">Contact Us</a>
+                        <a href="#" class="menu__link menu__list">Login</a>
+                        <button class="nav__link nav__link--primary menu__btn menu__list">Sign Up</button>
+                    </div>
                 </div>
             </nav>
         </div>

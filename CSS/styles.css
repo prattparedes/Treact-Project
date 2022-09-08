@@ -47,8 +47,13 @@ section{
 
 nav{
     display: flex;
-    justify-content: space-between;
+}
+
+.nav__container {
+    display: flex;
+    width: 100%;
     align-items: center;
+    justify-content: space-between;
 }
 
 .nav__logo{
@@ -84,6 +89,14 @@ nav{
     position: relative;
 }
 
+.nav__link--hover{
+    transition: all 300ms ease;
+}
+
+.nav__link--hover:hover{
+    color: #2a2fb7;
+}
+
 .nav__link--hover::after {
     content: "";
     position: absolute;
@@ -92,7 +105,7 @@ nav{
     right: 0px;
     height: 0;
     width: 100%;
-    border: 1px solid #2a2fb7;
+    border-top: 1px solid #2a2fb7;
     opacity: 0;
     transition: opacity 300ms ease;
 }
@@ -998,13 +1011,6 @@ TESTIMONIALS BUTTONS JAVASCRIPT
     transition: all 1000ms ease;
 }
 
-.view--testimonial-1 .testimonial--2{
-}
-
-.view--testimonial-1 .testimonial--1{
-    
-}
-
 .view--testimonial-2 .testimonial--2{
     transform: translateX(-100%);
 }
@@ -1012,3 +1018,161 @@ TESTIMONIALS BUTTONS JAVASCRIPT
 .view--testimonial-2 .testimonial--1{
     transform: translateX(-100%);
 }
+
+
+/* BOTON DE NAVEGACION y MENU*/
+
+.nav__btn{
+    cursor: pointer;
+    color: black;
+    font-size: 32px;
+    transition: color 300ms ease;
+    display: none;
+}
+
+.nav__btn:hover{
+    color: #2a2fb7;
+}
+
+.menu__backdrop{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 360px;
+    padding: 32px;
+    background-color: white;
+    border: #2a2fb7 1px solid;
+    border-radius: 16px;
+    margin: 32px 16px;
+    z-index: 4;
+    visibility: hidden;
+}
+
+.menu__backdrop--list{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu__link{
+    position: relative;
+    font-weight: 600;
+    font-size: 20px;
+    margin: 8px 0;
+    padding-bottom: 4px;
+    color: #1A202C;
+    letter-spacing: 1.25px;
+}
+
+
+.menu__link:hover{
+    color: #2a2fb7;
+}
+
+.menu__link:hover::after{
+    top: 28px;
+}
+
+.menu__link::after {
+    content: "";
+    position: absolute;
+    top:28px;
+    left: 0px;
+    right: 0px;
+    height: 0;
+    width: 100%;
+    border-top: 1px solid #2a2fb7;
+    opacity: 0;
+    transition: opacity 300ms ease;
+}
+
+.menu__link:hover::after {
+    opacity: 1;
+}
+
+.btn__menu-close{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    border: none;
+    background: none;
+    font-size: 24px;
+    cursor: pointer;
+    transition: color 300ms ease;
+}
+
+.menu__btn{
+    margin: 16px 0;
+    border: none;
+    cursor: pointer;
+}
+
+.btn__menu-close:hover{
+    color: #2a2fb7;
+}
+
+
+/* ANIMANDO EL MENU NAVEGACION */
+nav{
+    overflow: hidden;
+}
+
+.menu--open .menu__backdrop{
+    visibility: visible;
+    animation: navanimation-open 350ms ease-out;
+}
+
+.menu--closed .menu__backdrop{
+    visibility: hidden;
+    animation: navanimation-closed 300ms ease;
+    transition: all 300ms ease;
+}
+
+@keyframes navanimation-open{
+    0%{
+        transform: translateX(100%);
+    }
+
+    50%{
+        transform: translateX(-10%);
+    }
+
+    75%{
+        transform: translateX(2%);
+    }
+
+    100%{
+        transform: translateX(0)
+    }
+}
+
+@keyframes navanimation-closed{
+    0%{
+        transform: translateX(0)
+    }
+
+    100%{
+        transform: translateX(100%);
+    }
+}
+
+
+
+
+
+
+/* RESPONSIVIDAD */
+
+
+@media (max-width: 1024px) {
+    .nav__links {
+        display: none;
+    }
+    
+    .btn__menu-open{
+        display: block;
+    }
+}
+
