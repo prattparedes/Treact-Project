@@ -637,10 +637,6 @@ nav{
     width: 50%;
 }
 
-.testimonial{
-    margin-top: 40px;
-}
-
 .stars{
     font-size: 20px;
     color: rgba(246,173,85);
@@ -658,9 +654,11 @@ nav{
 }
 
 .testimonial__description{
+    height: 150px;
     font-size: 16px;
     color: #4a5568;
-    margin: 16px 0 40px 0;
+    margin-top: 16px;
+    margin-bottom: auto;
     line-height: 1.5;
 }
 
@@ -679,7 +677,6 @@ nav{
     height: 80px;
     border: #1A202C;
     border-radius: 9999px;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
 }
 
 .testimonial__btn{
@@ -689,6 +686,29 @@ nav{
     border: white solid;
     color: #2a2fb7;
     cursor: pointer;
+    margin: 0 8px;
+    transition: background-color 300ms ease;
+}
+
+.testimonial__btn:hover{
+    background-color: #d3d3d3;
+}
+
+.divider{
+    content: "";
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+
+    height: 24px;
+    margin: 12px 0;
+    border: lightgray 1px solid;
+}
+
+.testimonial__nav--arrows{
+    display: flex;
 }
 
 .testimonial__person--description{
@@ -941,6 +961,11 @@ footer{
     padding: 8px;
     background-color: white;
     border-radius: 999px;
+    transition: background-color 300ms ease;
+}
+
+.footer__icon--wrapper:hover{
+    background-color: lightgray;
 }
 
 .fa-facebook-f,
@@ -956,15 +981,34 @@ TESTIMONIALS BUTTONS JAVASCRIPT
 
 */
 
+.testimonial--wrapper{
+    margin-top: 40px;
+    height: 336px;
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    overflow-x: hidden;
+}
+
+.testimonial--1,
 .testimonial--2{
-    position: absolute;
+    width: 100%;
+    transition: all 1000ms ease;
 }
 
 .view--testimonial-1 .testimonial--2{
+}
+
+.view--testimonial-1 .testimonial--1{
     
 }
 
+.view--testimonial-2 .testimonial--2{
+    transform: translateX(-100%);
+}
 
 .view--testimonial-2 .testimonial--1{
-
+    transform: translateX(-100%);
 }
