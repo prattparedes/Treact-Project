@@ -1469,9 +1469,42 @@ nav{
     .faqs__title{
         font-size: 36px;
     }
+
+    .footer__container{
+        padding: 48px 0;
+    }
+
+    .links{
+        flex-wrap: wrap;
+        align-items: flex-start;
+        justify-content: left;
+    }
+
+    .links__list{
+        width: calc(100% / 3);
+        margin-top: 32px;
+    }
+
+    .footer__nav{
+        flex-direction: column;
+    }
+
+    .footer__copyright{
+        margin-top: 24px;
+    }
+
+    .footer__icons{
+        margin-top: 24px;
+    }
+}
+
+@media (max-width: 640px) {
+
 }
 
 
 /* Responsividad Small phones large smartphones*/
 
 @media (max-width: 550px) {
+    
+}
