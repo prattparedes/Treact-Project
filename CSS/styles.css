@@ -667,11 +667,10 @@ nav{
 }
 
 .testimonial__description{
-    height: 150px;
+    height: 160px;
     font-size: 16px;
     color: #4a5568;
     margin-top: 16px;
-    margin-bottom: auto;
     line-height: 1.5;
 }
 
@@ -996,13 +995,18 @@ TESTIMONIALS BUTTONS JAVASCRIPT
 
 .testimonial--wrapper{
     margin-top: 40px;
-    height: 336px;
+    height: 400px;
     width: 100%;
     position: relative;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
     overflow-x: hidden;
+}
+
+.testimonial{
+    display: flex;
+    flex-direction: column;
 }
 
 .testimonial--1,
@@ -1160,9 +1164,6 @@ nav{
 
 
 
-
-
-
 /* RESPONSIVIDAD */
 
 
@@ -1174,5 +1175,230 @@ nav{
     .btn__menu-open{
         display: block;
     }
+
+    .header__container{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .header__description{
+        width: 100%;
+        text-align: center;
+        max-width: 512px;
+    }
+
+    .header__description--title{
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .header__description--para{
+        font-size: 16px;
+        text-align: center;
+    }
+
+    .header__input--wrapper{
+        margin: 0 auto;
+    }
+
+    .header__input--wrapper{
+        width: 75%;
+    }
+
+    .header__description--logos{
+        width: 100%;
+        margin-top: 24px;
+        justify-content: center;
+        align-content: center;
+    }
+
+    .header__description--logo-p{
+        text-align: center;
+    }
+
+    .header__description--logo{
+        padding: 0;
+        min-width: 512px;
+    }
+
+    .header__description--figure{
+        margin-top: 40px;
+    }
+
+    .header__description--img{
+        transform: translateX(0);
+    }
+
+    .services__description--title{
+        text-align: center;
+    }
+
+    .services__container{
+        width: 100%;
+        margin: 0;
+    }
+
+    .services__description--para{
+        width: 80%;
+    }
+
+    .service{
+        width: 50%;
+    }
+
+    .quality-work__description--title{
+        font-size: 36px;
+    }
+
+    .section__description--quality{
+        padding: 0;
+    }
+
+    .section__description--para{
+        font-size: 16px;
+    }
+
+    .steps-work__description--title{
+        font-size: 36px;
+    }
+
+    .section__description--steps{
+        padding: 0 16px 0 32px;
+    }
+
+    .principles{
+        flex-direction: column;
+        margin-right: 80px;
+    }
+
+    .plans{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .services__description--para{
+        margin-bottom: 0;
+    }
+
+    .plan--container{
+        width: 50%;
+        margin-top: 48px;
+    }
+
+    .testimonials__img--wrapper{
+        width: 40%;
+    }
+
+    .testimonials__img{
+        transform: translateX(0);
+    }
+
+    .section__description--testimonials{
+        width: 60%;
+    }
+
+    .testimonial{
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .testimonial--wrapper{
+        height: 350px;
+    }
+
+    .faqs{
+        margin-top: 24px;
+    }
+
+    .faqs__description{
+        width: 60%;
+    }
+
+    .getstarted__description{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .getstarted__links{
+        justify-content: center;
+        margin-top: 24px;
+    }
+
+    .getstarted__container{
+        padding: 80px 24px;
+    }
 }
 
+
+@media (max-width: 802px){
+    .testimonial__nav{
+        margin-top: 16px;
+    }
+}
+
+@media (max-width:784px){
+    .testimonial--wrapper{
+        height: 370px;
+    }
+}
+
+/* small phones, Tablets, and large phones */
+
+@media (max-width: 768px) {
+    .header__description{
+        padding: 0 24px;
+    }
+
+    h1{
+        font-size: 40px;
+    }
+
+    h2 {
+        font-size: 26px;
+    }
+
+    .header__button {
+        font-size: 18px;
+    }
+
+    .highlights__wrapper{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .highlight{
+        width: 100%;
+    }
+
+    .highlight:not(:last-child) {
+        margin-bottom: 24px;
+    }
+
+    .books{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .book {
+        width: 50%;
+    }
+}
+
+
+/* Responsividad Small phones large smartphones*/
+
+@media (max-width: 550px) {
+    .nav__links {
+        display: none;
+    }
+
+    .button__menu {
+        display: block;
+    }
+}
