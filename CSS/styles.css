@@ -1228,6 +1228,7 @@ nav{
 
     .header__description--img{
         transform: translateX(0);
+        transform: translateY(56px);
     }
 
     .services__description--title{
@@ -1239,12 +1240,16 @@ nav{
         margin: 0;
     }
 
+    .services{
+        justify-content: center;
+    }
+
     .services__description--para{
         width: 80%;
     }
 
     .service{
-        width: 50%;
+        width: 40%;
     }
 
     .quality-work__description--title{
@@ -1282,7 +1287,7 @@ nav{
     }
 
     .plan--container{
-        width: 50%;
+        width: 384px;
         margin-top: 48px;
     }
 
@@ -1309,8 +1314,13 @@ nav{
         height: 350px;
     }
 
+    .faq{
+        width: 100%;
+    }
+
     .faqs{
         margin-top: 24px;
+        width: 100%;
     }
 
     .faqs__description{
@@ -1349,44 +1359,115 @@ nav{
 /* small phones, Tablets, and large phones */
 
 @media (max-width: 768px) {
-    .header__description{
-        padding: 0 24px;
+    .service{
+        width: 55%;
     }
 
-    h1{
-        font-size: 40px;
+    .service__description--para{
+        padding-right: 32px;
     }
 
-    h2 {
-        font-size: 26px;
-    }
-
-    .header__button {
-        font-size: 18px;
-    }
-
-    .highlights__wrapper{
-        display: flex;
-        flex-direction: column;
+    .quality-work__container{
+        flex-direction: column-reverse;
         align-items: center;
         justify-content: center;
     }
 
-    .highlight{
-        width: 100%;
+    .section__img--wrapper{
+        width: 70%;
+        margin-bottom: 40px;
     }
 
-    .highlight:not(:last-child) {
-        margin-bottom: 24px;
+    .section__description--quality{
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        width: 70%;
     }
 
-    .books{
+    .section__description--para{
+        text-align: center;
+    }
+
+    .steps__container{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .steps__img--wrapper{
+        margin-bottom: 40px;
+        width: 70%;
+    }
+
+    .section__description--steps{
+        width: 70%;
+    }
+
+    .step{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .step__description{
+        margin: 0;
+    }
+
+    .step__number{
+        font-weight: 700;
+    }
+
+    .step__description--para{
+        margin: 0 auto;
+        margin-top: 16px;
+    }
+
+    .step__description--h6{
+        margin-top: 8px;
+    }
+
+    .quality-work__description--title{
+        margin: 0;
+    }
+
+    .values__description{
+        font-size: 14px;
+    }
+
+    .principles{
+        margin-right: 0;
+        align-items: center;
+    }
+
+    .principle{
+        margin-right: 0;
+        width: 70%;
+    }
+
+    .principle__title{
+        margin: 0 auto;
+        justify-content: center;
+    }
+
+    .testimonials__container{
         display: flex;
-        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
     }
 
-    .book {
-        width: 50%;
+    .testimonials__img--wrapper{
+        width: 70%;
+        margin-bottom: 60px;
+    }
+
+    .section__description--testimonials{
+        width: 70%;
+        text-align: center;
+    }
+    
+    .faqs__title{
+        font-size: 36px;
     }
 }
 
@@ -1394,11 +1475,3 @@ nav{
 /* Responsividad Small phones large smartphones*/
 
 @media (max-width: 550px) {
-    .nav__links {
-        display: none;
-    }
-
-    .button__menu {
-        display: block;
-    }
-}
