@@ -1510,6 +1510,11 @@ nav{
         margin: 0 auto;
     }
 
+    .header__description--logo{
+        width: 100%;
+        min-width: auto;
+    }
+
     .services__description--title{
         font-size: 36px;
     }
@@ -1521,7 +1526,7 @@ nav{
     .service{
         flex-direction: column;
         align-items: center;
-        width: 60%;
+        width: 70%;
     }
 
     .service__description{
@@ -1554,7 +1559,7 @@ nav{
     }
 
     .testimonial--wrapper{
-        height: 480px;
+        height: 520px;
     }
 
     .testimonial__nav{
@@ -1635,7 +1640,7 @@ nav{
         padding: 16px 32px;
     }
 
-    .links{
+    .links{imonial__nav
         align-items: center;
         justify-content: center;
     }
@@ -1643,7 +1648,7 @@ nav{
     .links__list{
         align-items: center;
         width: auto;
-        margin: 24px 24px 0 24px;
+        margin: 24px 16px 0 16px;
     }
 
     .links__list--wrapper{
@@ -1656,5 +1661,19 @@ nav{
 /* Responsividad Small phones large smartphones*/
 
 @media (max-width: 550px) {
-    
+    .section__img--wrapper{
+        width: 100%;
+    }
+
+    .section__description--quality{
+        width: 100%;
+    }
+
+    .steps__img--wrapper{
+        width: 100%;
+    }
+
+    .section__description--testimonials{
+        width: 100%;
+    }
 }
