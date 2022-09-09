@@ -1499,7 +1499,157 @@ nav{
 }
 
 @media (max-width: 640px) {
+    .header__description--btn{
+        position: static;
+        width: 100%;
+        margin-top: 16px;
+    }
 
+    .header__input--wrapper{
+        width: 85%;
+        margin: 0 auto;
+    }
+
+    .services__description--title{
+        font-size: 36px;
+    }
+
+    .services__description--para{
+        font-size: 14px;
+    }
+
+    .service{
+        flex-direction: column;
+        align-items: center;
+        width: 60%;
+    }
+
+    .service__description{
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .service__description--para{
+        padding: 0;
+    }
+
+    .quality-work__description--title{
+        font-size: 30px;
+    }
+
+    .section__description--quality{
+        width: 80%;
+    }
+
+    .section__img--wrapper{
+        width: 80%;
+    }
+
+    .section__description--steps{
+        width: 80%;
+    }
+
+    .steps__img--wrapper{
+        width: 80%;
+    }
+
+    .testimonial--wrapper{
+        height: 480px;
+    }
+
+    .testimonial__nav{
+        flex-direction: column;
+    }
+    
+    .section__description--para{
+        padding: 0;
+    }
+
+    .testimonial{
+        justify-content: start;
+    }
+
+    .testimonial__description{
+        margin-bottom: 16px;
+    }
+    
+    .testimonial__person{
+        flex-direction: column;
+    }
+
+    .testimonial__nav{
+        margin-top: 24px;
+    }
+
+    .steps-work__description--title{
+        font-size: 30px;
+    }
+
+    .section__description--testimonials{
+        width: 80%;
+    }
+
+    .testimonial__person--description{
+        padding: 0;
+        text-align: center;
+        align-items: center;
+    }
+
+    .testimonial__img{
+        width: 64px;
+        height: 64px;
+    }
+
+    .testimonial__description--job{
+        margin-top: 8px;
+    }
+
+    .testimonial__nav--arrows{
+        margin-top: 24px;
+    }
+
+    .faqs__description{
+        width: 80%;
+    }
+
+    .faq__description{
+        font-size: 18px;
+    }
+
+    .getstarted__description--para{
+        width: 80%;
+        font-size: 24px;
+    }
+
+    .getstarted__links{
+        flex-direction: column;
+        margin-top: 8px;
+    }
+
+    .getstarted__link--primary{
+        margin: 0;
+    }
+
+    .getstarted__link{
+        margin-top: 16px;
+        padding: 16px 32px;
+    }
+
+    .links{
+        align-items: center;
+        justify-content: center;
+    }
+
+    .links__list{
+        align-items: center;
+        width: auto;
+        margin: 24px 24px 0 24px;
+    }
+
+    .links__list--wrapper{
+        text-align: center;
+        align-items: center;
+    }
 }
 
 
